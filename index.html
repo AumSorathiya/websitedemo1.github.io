@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Owl - Learn with Wisdom</title>
+    <meta name="description" content="Unlock your potential with Old Owl's comprehensive learning platform. Join thousands of students who have transformed their careers with expert-led courses.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-user-graduate"></i>
+                <span>Old Owl</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn-primary">Get Started</button>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="nav-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-circle hero-circle-1"></div>
+            <div class="hero-circle hero-circle-2"></div>
+            <div class="hero-circle hero-circle-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Learn with <span class="text-gold">Wisdom</span>
+                    </h1>
+                    <p class="hero-description">
+                        Unlock your potential with our comprehensive learning platform. Join thousands of students who have transformed their careers with Old Owl's expert-led courses.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-gold">Start Learning Today</button>
+                        <button class="btn-outline">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-card">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Stack of books in a library representing knowledge and learning">
+                        <div class="stats">
+                            <div class="stat">
+                                <div class="stat-number" id="students-count">0</div>
+                                <div class="stat-label">Students</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" id="courses-count">0</div>
+                                <div class="stat-label">Courses</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" id="instructors-count">0</div>
+                                <div class="stat-label">Instructors</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Old Owl?</h2>
+                <p>Experience learning like never before with our innovative approach to education</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon brown">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals with years of real-world experience</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon gold">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Learning</h3>
+                    <p>Study at your own pace with 24/7 access to all course materials</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon forest">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certification</h3>
+                    <p>Earn recognized certificates to advance your career</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Courses</h2>
+                <p>Discover our most loved courses by students worldwide</p>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Modern web development workspace with code on screen">
+                    <div class="course-content">
+                        <div class="course-header">
+                            <span class="course-category brown">Programming</span>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <h3>Full Stack Web Development</h3>
+                        <p>Master modern web development with React, Node.js, and MongoDB</p>
+                        <div class="course-footer">
+                            <span class="course-price">$99</span>
+                            <button class="btn-enroll" onclick="enrollCourse('Full Stack Web Development')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Data analysis charts and graphs on computer screen">
+                    <div class="course-content">
+                        <div class="course-header">
+                            <span class="course-category gold">Data Science</span>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <h3>Data Science & Analytics</h3>
+                        <p>Learn Python, machine learning, and data visualization techniques</p>
+                        <div class="course-footer">
+                            <span class="course-price">$129</span>
+                            <button class="btn-enroll" onclick="enrollCourse('Data Science & Analytics')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Digital marketing dashboard with analytics and social media metrics">
+                    <div class="course-content">
+                        <div class="course-header">
+                            <span class="course-category forest">Marketing</span>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <h3>Digital Marketing Mastery</h3>
+                        <p>Complete guide to SEO, social media, and content marketing</p>
+                        <div class="course-footer">
+                            <span class="course-price">$79</span>
+                            <button class="btn-enroll" onclick="enrollCourse('Digital Marketing Mastery')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn-primary">View All Courses</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Old Owl</h2>
+                    <p>Founded with the vision of making quality education accessible to everyone, Old Owl has been at the forefront of online learning innovation for over a decade.</p>
+                    <p>Our platform combines cutting-edge technology with time-tested pedagogical approaches to create an engaging and effective learning experience that adapts to your needs.</p>
+                    
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years of Excellence</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Completion Rate</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Students collaborating in a modern learning environment">
+                    <div class="award-badge">
+                        <div class="award-title">Award Winning</div>
+                        <div class="award-subtitle">Education Platform</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Students Say</h2>
+                <p>Real stories from real students who achieved their goals</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Old Owl completely transformed my career. The instructors are amazing and the content is always up-to-date with industry standards."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100" 
+                             alt="Professional headshot of Sarah Chen, a successful student">
+                        <div class="author-info">
+                            <div class="author-name">Sarah Chen</div>
+                            <div class="author-role">Software Engineer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The flexibility of learning at my own pace while having access to expert mentors made all the difference in my learning journey."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100" 
+                             alt="Professional headshot of Michael Rodriguez, a successful student">
+                        <div class="author-info">
+                            <div class="author-name">Michael Rodriguez</div>
+                            <div class="author-role">Data Analyst</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Outstanding platform with practical, hands-on projects. I landed my dream job within 3 months of completing my course!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100" 
+                             alt="Professional headshot of Emily Johnson, a successful student">
+                        <div class="author-info">
+                            <div class="author-name">Emily Johnson</div>
+                            <div class="author-role">Marketing Manager</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest courses, tips, and industry insights delivered to your inbox</p>
+                
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" id="email-input" placeholder="Enter your email" required>
+                    <button type="submit" id="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Old Owl</span>
+                    </div>
+                    <p>Empowering learners worldwide with quality education and expert guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@oldowl.in</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Learning St, Education City</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Old Owl. All rights reserved. | Designed with ❤️ for learners worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
